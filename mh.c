@@ -50,7 +50,13 @@ int main(){
 	char s4[] = "abcd";
 	printf("Should be positive: \t%d\n",strcmp(s3,s4));
 
-	
+	char * s5 = "hello";
+	char * s6 = "goodbye";
+	printf("Testing strncpy:\n");
+	printf("s5:%s\n", s5);
+	printf("s6:%s\n", s6);
+	mystrncpy(s5,s6,3);
+	printf("s5 after mystrncpy(s5,s6,3):%s\n", s5);
 
 }
 
