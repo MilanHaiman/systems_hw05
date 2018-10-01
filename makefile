@@ -1,11 +1,11 @@
 all: mystrings.o driver.o
-	clang -o tests mystrings.o driver.o
+	gcc -o tests mystrings.o driver.o
 
 mystrings.o: mystrings.c mystrings.h
-	clang -c mystrings.c
+	gcc -c mystrings.c
 
 driver.o: driver.c mystrings.h
-	clang -c driver.c
+	gcc -c driver.c
 
 run:
 	./tests
