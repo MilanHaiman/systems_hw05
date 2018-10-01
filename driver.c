@@ -68,7 +68,7 @@ int main() {
     printf("Length of %s: %d\n",s2,mystrlen(s2));
     printf("Length of %s: %d\n\n",s3,mystrlen(s3));
 
-    printf("Using built-in function:\n");
+    printf("Using function from string.h:\n");
     printf("Length of %s: %lu\n",s1,strlen(s1));
     printf("Length of %s: %lu\n",s2,strlen(s2));
     printf("Length of %s: %lu\n",s3,strlen(s3));
@@ -87,7 +87,7 @@ int main() {
     printf("Comparison of %s and %s: %d\n",s3,s4,mystrcmp(s3,s4));
     printf("Comparison of %s and %s: %d\n\n",s3,s5,mystrcmp(s3,s5));
 
-    printf("Using built-in function:\n");
+    printf("Using function from string.h:\n");
     printf("Comparison of %s and %s: %d\n",s1,s2,strcmp(s1,s2));
     printf("Comparison of %s and %s: %d\n",s3,s4,strcmp(s3,s4));
     printf("Comparison of %s and %s: %d\n",s3,s5,strcmp(s3,s5));
@@ -107,7 +107,7 @@ int main() {
     
     printf("Address of the first occurence of %c in %s: %p\n\n",s,str,sp);
 
-    printf("Using built-in function:\n");
+    printf("Using function from string.h:\n");
     
     s='r';
     sp=strchr(str,s);
@@ -141,7 +141,7 @@ int main() {
     char strng4[]="improved";
     char strng5[]="flight";
 
-    printf("Using built-in function:\n");
+    printf("Using function from string.h:\n");
     printf("Concatenation of %s and dis(array size:%d): %s\n",strng3,mystrlen(strng1),strcat(strng1,strng3));
     printf("Concatenation of %s and un(array size: 7): %s\n",strng4,strcat(strng2,strng4));
     printf("This is the next string(it was flight) intitialized after the previous one which overflowed: %s\n",strng5);
@@ -160,7 +160,7 @@ int main() {
     sp=mystrstr(s4,s5);
     printf("Address of the first occurence of %s in %s: %p\n\n",s5,s4,sp);
 
-    printf("Using built-in function:\n");
+    printf("Using function from string.h:\n");
 
     printf("Address of the first occurence of %s in %s: %p\n",s3,s4,strstr(s4,s3));
     printf("Address of the first occurence of %s in %s: %p\n",s5,s4,strstr(s4,s5));
