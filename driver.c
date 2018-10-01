@@ -168,6 +168,20 @@ int main() {
 
     printf("------------\n\n");
 
+    char s05[] = "hello";
+    char s06[] = "goodbye";
+    printf("Testing strncpy:\n");
+    printf("s5:%s\n", s05);
+    printf("s6:%s\n", s06);
+    mystrncpy(s05,s06,3);
+    printf("[ours] s5 after mystrncpy(s5,s6,3):%s\n", s05);
+    char s07[] = "hello";
+    char s08[] = "goodbye";
+    printf("s7:%s\n", s07);
+    printf("s8:%s\n", s08);
+    strncpy(s07,s08,3);
+    printf("[lib] s7 after strncpy(s7,s8,3):%s\n", s07);
+
 
 	
 }
