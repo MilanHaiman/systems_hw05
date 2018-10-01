@@ -19,8 +19,8 @@ int main() {
   printf("Testing strchr:\n [lib] String from first r: %s\n",cp2);
   printf("Testing strcat:\n [ours] Concatenation of dis and order: %s\n",concat);
   printf("Testing strcat:\n [lib] Concatenation of dis and order: %s\n",concat2);
-  printf("Testing strstr:\n [ours] %s\n",mystrstr(s4,s3));
-  printf("Testing strstr:\n [lib] %s\n",strstr(s4,s3));
+  printf("Testing strstr:\n [ours] from first \"er\" in \"Peter Piper picked a peck of pickled peppers.\" %s\n",mystrstr(s4,s3));
+  printf("Testing strstr:\n [lib] from first \"er\" in \"Peter Piper picked a peck of pickled peppers.\" %s\n",strstr(s4,s3));
 
 
 
