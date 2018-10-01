@@ -146,26 +146,24 @@ int main() {
     printf("Concatenation of %s and un(array size: 7): %s\n",strng4,strcat(strng2,strng4));
     printf("This is the next string(it was flight) intitialized after the previous one which overflowed: %s\n",strng5);
     //printf("Concatenation of %s and %s: %s\n",s2,s3,strcat(s2,s3));
-    /*
     printf("------------\n\n");
 
-	printf("test for strstr\n\n");
+    printf("test for strstr\n\n");
 
-	s3="er";
-  	s4="Peter Piper picked a peck of pickled peppers.";
-	s5="zx";
+    s3="er";
+    s4="Peter Piper picked a peck of pickled peppers.";
+    s5="zx";
     printf("Using our function:\n");
 
-	sp=mystrstr(s4,s3);
+    sp=mystrstr(s4,s3);
     printf("Address of the first occurence of %s in %s: %p\n",s3,s4,sp);
-	sp=mystrstr(s4,s5);
+    sp=mystrstr(s4,s5);
     printf("Addressz of the first occurence of %s in %s: %p\n\n",s5,s4,sp);
 
     printf("Using built-in function:\n");
 
     printf("Address of the first occurence of %s in %s: %p\n",s3,s4,strstr(s4,s3));
-	printf("Address of the first occurence of %s in %s: %p\n",s5,s4,strstr(s4,s5));
-    */
+    printf("Address of the first occurence of %s in %s: %p\n",s5,s4,strstr(s4,s5));
     
 
     printf("------------\n\n");
