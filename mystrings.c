@@ -41,6 +41,9 @@ char * mystrcat( char *dest, char *source){
 }
 char * mystrstr( char *s1, char * s2 ){
   char *first=mystrchr(s1,*s2);
+  if(first==NULL){
+    return NULL;
+  }
   for(int i=0;i<mystrlen(s2);i++){
     if(first[i]!=s2[i]){
         if(first==NULL){
