@@ -158,7 +158,7 @@ int main() {
     sp=mystrstr(s4,s3);
     printf("Address of the first occurence of %s in %s: %p\n",s3,s4,sp);
     sp=mystrstr(s4,s5);
-    printf("Addressz of the first occurence of %s in %s: %p\n\n",s5,s4,sp);
+    printf("Address of the first occurence of %s in %s: %p\n\n",s5,s4,sp);
 
     printf("Using built-in function:\n");
 
