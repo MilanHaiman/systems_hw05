@@ -79,8 +79,8 @@ int main() {
     s1="abce";
     s2="abcd";
     s3="hello";
-    char s4="hill";
-    char s5="hello";
+    char *s4="hill";
+    char *s5="hello";
 
     printf("Using our function:\n");
     printf("Comparison of %s and %s: %d\n",s1,s2,mystrcmp(s1,s2));
