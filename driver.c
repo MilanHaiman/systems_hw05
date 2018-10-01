@@ -79,8 +79,8 @@ int main() {
     s1="abce";
     s2="abcd";
     s3="hello";
-    char *s4="hill";
-    char *s5="hello";
+    char s4="hill";
+    char s5="hello";
 
     printf("Using our function:\n");
     printf("Comparison of %s and %s: %d\n",s1,s2,mystrcmp(s1,s2));
@@ -146,6 +146,7 @@ int main() {
     printf("Concatenation of %s and un(array size: 7): %s\n",strng4,strcat(strng2,strng4));
     printf("This is the next string(it was flight) intitialized after the previous one which overflowed: %s\n",strng5);
     //printf("Concatenation of %s and %s: %s\n",s2,s3,strcat(s2,s3));
+    /*
     printf("------------\n\n");
 
 	printf("test for strstr\n\n");
@@ -164,6 +165,7 @@ int main() {
 
     printf("Address of the first occurence of %s in %s: %p\n",s3,s4,strstr(s4,s3));
 	printf("Address of the first occurence of %s in %s: %p\n",s5,s4,strstr(s4,s5));
+    */
     
 
     printf("------------\n\n");
