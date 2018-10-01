@@ -54,3 +54,20 @@ char * mystrstr( char *s1, char * s2 ){
   }
   return first;
 }
+
+
+char * mystrncpy( char *dest, char *source, int n) {
+  char * output = & dest[mystrlen(dest)];
+  int i = 0;
+  while (i < n && source[i]) {
+    dest[i] = source[i];
+    i++;
+  }
+  while (i<n) {
+    dest[i] = 0;
+  }
+  if (!output[0]) {
+    output = & dest[n];
+  }
+  return output;
+}
