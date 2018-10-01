@@ -13,8 +13,16 @@ char * mystrchr( char *s, char c){
 
 }
 
+int mystrlen(char *s) {
+	int i = 0;
+	while (s[i]) {
+		i++;
+	}
+	return i;
+}
+
 char * mystrcat( char *dest, char *source){
-  char *end=dest+strlen(dest);
+  char *end=dest+mystrlen(dest);
   while(*source){
     *end=*source;
     source++;
@@ -25,7 +33,7 @@ char * mystrcat( char *dest, char *source){
 
 char * mystrstr( char *s1, char * s2 ){
   char *first=mystrchr(s1,*s2);
-  for(int i=0;i<strlen(s2);i++){
+  for(int i=0;i<mystrlen(s2);i++){
     if(first[i]!=s2[i]){
         if(first==NULL){
          return NULL;
@@ -37,14 +45,6 @@ char * mystrstr( char *s1, char * s2 ){
     }
   }
   return first;
-}
-
-int mystrlen(char *s) {
-	int i = 0;
-	while (s[i]) {
-		i++;
-	}
-	return i;
 }
 
 int mystrcmp( char *s1, char *s2) {
